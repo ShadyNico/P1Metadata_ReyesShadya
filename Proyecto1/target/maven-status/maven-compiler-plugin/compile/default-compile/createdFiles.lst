@@ -1,0 +1,7 @@
+com\example\Proyecto1\dto\AppInfoResponse.class
+com\example\Proyecto1\config\AppInfoProperties.class
+com\example\Proyecto1\dto\AppInfoResponse$DeveloperInfo.class
+com\example\Proyecto1\Proyecto1Application.class
+com\example\Proyecto1\controller\InfoController.class
+com\example\Proyecto1\controller\HelloController.class
+com\example\Proyecto1\config\AppInfoProperties$Developer.class
