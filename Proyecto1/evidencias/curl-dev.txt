@@ -1,0 +1,22 @@
+> curl -i http://localhost:8080/api/info   (perfil dev)
+HTTP/1.1 200 
+Content-Type: application/json
+Content-Length: 275
+Date: Wed, 07 Oct 2026 01:02:47 GMT
+
+{
+  "name" : "Gestor de Inventario",
+  "version" : "0.0.1-SNAPSHOT",
+  "description" : "Aplicacion ejecutandose en modo desarrollo",
+  "environment" : "dev",
+  "developer" : {
+    "name" : "Shadya Nicole Reyes Zambrano",
+    "email" : "misticjake123@gmail.com"
+  }
+}
+
+> curl http://localhost:8080/actuator/info
+{"app":{"name":"Gestor de Inventario","version":"0.0.1-SNAPSHOT"}}
+
+> curl http://localhost:8080/actuator/health
+{"components":{"db":{"details":{"database":"H2","validationQuery":"isValid()"},"status":"UP"},"diskSpace":{"details":{"total":1023103987712,"free":571243847680,"threshold":10485760,"path":"C:\\Users\\cs023\\OneDrive\\Escritorio\\U7\\Progra Avanzada\\Proyecto1\\Proyecto1\\.","exists":true},"status":"UP"},"livenessState":{"status":"UP"},"ping":{"status":"UP"},"readinessState":{"status":"UP"},"ssl":{"details":{"expiringChains":[],"invalidChains":[],"validChains":[]},"status":"UP"}},"groups":["liveness","readiness"],"status":"UP"}
